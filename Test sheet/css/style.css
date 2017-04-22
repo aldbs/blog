@@ -1,0 +1,157 @@
+body{
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+.banner{
+	width:auto;
+	text-align: center;
+}
+
+.menu{
+	background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	height: 60px;
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+#main-wrapper{
+	float: left;
+	width: 67%;
+	max-width: 750px;	
+	/*border: 1px solid;*/
+}
+
+#sidebar-wrapper{
+	float: right;
+	width: 30%;
+	max-width: 330px;
+	/*border: 1px solid;*/
+	height: 500px;
+}
+
+#sidebar-widget{
+	/*background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	margin-bottom: 20px;
+}
+
+#sidebar-widget-title{
+	background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-size: 25px;
+}
+
+#sidebar-widget-content{
+	text-align: center;
+}
+
+.post-container{
+	margin-bottom: 20px;
+}
+
+.post-container-pic{
+	float: none;
+	clear: both;
+	width: 100%;
+	position: relative;	
+	height: 200px;
+	background:url("https://placehold.it/750x200");
+}
+
+.post-container-pic a{
+	width: 100%;
+	height: 200px;
+	display: block;
+	-webkit-transition:all .3s ease-out!important;
+}
+
+.post-container-pic a:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+.post-container-article{
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	border-bottom: 20px /*solid rgba(16,144,139,0.5)*/;
+}
+
+.post-container-title{
+	text-align: center;
+	padding-bottom: 10px; 
+}
+.post-container-summary{
+	text-align: justify;
+}
+
+.post-container-footer{
+	width: 100%;
+	height: 50px;
+}
+
+.post-container-footer-info{
+	width: 100%;
+	height: 20px;
+	padding: 0px 10px 0px 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	margin: 0px;
+}
+
+.post-container-footer-border{
+	width: 100%;
+	height: 20px;
+	background: url(http://jellywp.com/theme/nanopress_html/img/pattern.png) repeat; 
+}
+
+.post-container-footer-info-date{
+	text-align: right;
+}
+
+.post-container-footer-info-author{
+	text-align: left;
+}
+
+.post-container-footer-info-twitter{
+	text-align: center;
+}
+
+.nav{
+	text-align: center;
+	background-color: rgba(16,144,139,0.5);
+
+}
+
+.nav > li {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px; 
+}
+
+.nav > li > a {
+	color: white;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	text-decoration: none;
+	background-color: rgba(229,248,255,0.5);
+	color: white;
+}
+
+.carousel{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 530px;
+	height: 300px;
+}
+
+.carousel > .item > a:hover{
+	background-color: #ffffff;
+}

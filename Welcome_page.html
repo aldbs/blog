@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex's blog</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Codystar:300|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200" rel="stylesheet">
+</head>
+<header>
+	
+	<div class="navbar row">
+		<ul class="nav navbar-fixed-top">
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Articles</a></li>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Plus d'info</a></li>
+		</ul>
+	</div>
+	<!-- banner -->
+	<div class="banner row">
+		<img src="images/Banner_blog_Alex.jpg">
+	</div>
+	
+</header>
+<body>
+	<div class="carousel-wrapper">
+		<hr>
+	  	<div class="row">
+	    	<div class="col-md-12">
+				<!-- Carousel -->
+				<div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
+			        <div class="carousel-inner">
+			          <div class="item active">
+			            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/500x300/f44336/000000" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/500x300/e91e63/000000" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/500x300/9c27b0/000000" class="img-responsive"></a></div>
+			          </div>
+			        </div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Container -->
+	<div class="container">
+		<div id="content-wrapper">		
+			<!-- Articles wrapper -->
+			<div id="main-wrapper">
+				<div class="post-container">
+					<div class="post-container">
+						<div class="post-container-pic">
+							<figure><a href"#">
+								<img src="https://placehold.it/750x300">
+							</a></figure>
+						</div>
+						<div class="post-container-article">
+							<div class="post-container-title">
+								<h1>Titre du premier article</h1>	
+							</div>
+							<div class="post-container-summary">
+								<p>Nouvel article de ouf ou on aborde tout ce qui peut l'être et surtout le max d'info possible en vraiment pas lgt <a href="">click here!</a>
+								</p>
+							</div>
+						</div>
+						<div class="post-container-footer">
+							<div class="post-container-footer-info">
+								<div class="row">
+									<div class="col-xs-4 post-container-footer-info-author">							
+										<p>Auteur : AD </p>
+									</div>
+									<div class="col-xs-4 post-container-footer-info-twitter">
+										<p>Twitter : <a href="https://twitter.com/Ale_dbs">@Ale_dbs</a></p>
+									</div>
+									<div class="col-xs-4 post-container-footer-info-date">
+										<p>Date : 01.01.2017</p>
+									</div>
+								</div>	
+							</div>
+							<div class="post-container-footer-border">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<!-- Slidebar wrapper -->
+			<div id="sidebar-wrapper">
+				<div id="sidebar-widget">
+					<div id="sidebar-widget-title">
+						<p>About me</p>
+					</div>
+					<div id="sidebar-widget-content">
+						<p>text</p>
+					</div>
+				</div>
+				<div id="sidebar-widget">
+					<div id="sidebar-widget-title">
+						<p>Others info</p>
+					</div>
+					<div id="sidebar-widget-content">
+						<p>text other one</p>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+
+	<!-- Javascript bootstrap -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+			// Instantiate the Bootstrap carousel
+	$('.multi-item-carousel').carousel({
+	  interval: false
+	});
+
+	// for every slide in carousel, copy the next slide's item in the slide.
+	// Do the same for the next, next item.
+	$('.multi-item-carousel .item').each(function(){
+	  var next = $(this).next();
+	  if (!next.length) {
+	    next = $(this).siblings(':first');
+	  }
+	  next.children(':first-child').clone().appendTo($(this));
+	  
+	  if (next.next().length>0) {
+	    next.next().children(':first-child').clone().appendTo($(this));
+	  } else {
+	    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	  }
+	});
+</script>
+
+</body>
+
+<footer>
+	<br>
+	<p>Created by <b>Alex</b></p>
+</footer>
+
+</html>

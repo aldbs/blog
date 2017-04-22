@@ -1,0 +1,287 @@
+body{
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+.banner{
+	width:auto;
+	text-align: center;
+}
+
+footer{
+	background-color:white; 
+	margin-bottom: 0px;
+	height: 30px;
+	font-size: 15px;
+}
+
+footer > p {
+	margin: 0px;
+	color: black;
+	text-align: center;
+}
+
+.menu{
+	background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	height: 60px;
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+#main-wrapper{
+	float: left;
+	width: 67%;
+	max-width: 750px;	
+	/*border: 1px solid;*/
+}
+
+#sidebar-wrapper{
+	float: right;
+	width: 30%;
+	max-width: 330px;
+	/*border: 1px solid;*/
+	height: 500px;
+}
+
+#sidebar-widget{
+	/*background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	margin-bottom: 20px;
+}
+
+#sidebar-widget-title{
+	background-color: rgba(16,144,139,0.5);  /*#10908B*/;
+	height: 40px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-size: 25px;
+}
+
+#sidebar-widget-content{
+	text-align: center;
+}
+
+.post-container{
+	margin-bottom: 20px;
+}
+
+/*.post-container-pic{
+	float: none;
+	clear: both;
+	width: 100%;
+	position: relative;	
+	height: 300px;
+	background:url("https://placehold.it/750x300");
+}*/
+
+/*.post-container-pic a{
+	width: 100%;
+	height: 300px;
+	display: block;
+	-webkit-transition:all .3s ease-out!important;
+}
+
+.post-container-pic a:hover{
+	background-color: rgba(255,255,255,0.3);
+}*/
+
+.post-container-pic figure {
+  position: relative;
+  width: 750px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.post-container-pic figure::after,
+.post-container-pic figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+.post-container-pic figure:hover::after,
+.post-container-pic figure:hover::before {
+  -webkit-animation: shine 1.5s;
+  animation: shine 1.5s;
+}
+
+.post-container-pic figure:hover::after {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.post-container-pic figure:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/**/
+.post-container-article{
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	border-bottom: 20px /*solid rgba(16,144,139,0.5)*/;
+}
+
+.post-container-title{
+	text-align: center;
+	padding-bottom: 10px; 
+}
+.post-container-summary{
+	text-align: justify;
+}
+
+.post-container-footer{
+	width: 100%;
+	height: 50px;
+}
+
+.post-container-footer-info{
+	width: 100%;
+	height: 20px;
+	padding: 0px 10px 0px 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	margin: 0px;
+}
+
+.post-container-footer-border{
+	width: 100%;
+	height: 20px;
+	background: url(http://jellywp.com/theme/nanopress_html/img/pattern.png) repeat; 
+}
+
+.post-container-footer-info-date{
+	text-align: right;
+}
+
+.post-container-footer-info-author{
+	text-align: left;
+}
+
+.post-container-footer-info-twitter{
+	text-align: center;
+}
+
+.nav{
+	text-align: center;
+	background-color: rgba(16,144,139,0.5);
+
+}
+
+.nav > li {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px; 
+}
+
+.nav > li > a {
+	color: white;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+	text-decoration: none;
+	background-color: rgba(229,248,255,0.5);
+	color: white;
+}
+
+.carousel{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: auto;
+	height: 300px;
+}
+
+.carousel-inner > .item > a > img {
+	height: 300px;
+}
+
+.carousel-inner  > .item > .row > .col-xs-4{
+	padding: 0px;
+}
+
+.carousel-inner  > .item > .row > .col-xs-4 > a > img {
+	height: 300px;
+}
+
+.carousel-control.left{
+	margin-left: 15px;
+}
+
+.carousel-control.right{
+	margin-right: 15px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  border:0;
+  border-radius: 0px;
+  background-color: rgba(229,248,255,0.5);
+}
+.carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 8px;
+  background-color: rgba(229,248,255,0.5);
+}
+
+.multi-item-carousel > .carousel-inner > .item{
+  transition: 500ms ease-in-out left;
+}
+.carousel-inner.active .left{
+  left:-33%;
+}
+.carousel-inner.active .right{
+  left:33%;
+}
+
+.carousel-inner.active.next{
+      left: 33%;
+  }
+
+.carousel-inner.active.prev{
+  left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control .left, .right{
+      background-image: none;
+    }
+  }
+}
+
